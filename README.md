@@ -98,6 +98,35 @@ Al momento de realizar esta prueba el servicio nos devuelve un XML con todos los
 ![image](https://github.com/luckLuis/marathon/assets/58127103/b273f935-3dda-4a43-906f-7faf8a741f13)
 
 
+### Prueba de crear empleados
+
+⏩Envio de datos 
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/6c926bfe-07a4-40b6-b001-40bf4f1b2745)
+
+⏩ Mensaje de correcto funcionamiento
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/d59bd5f0-97cf-439a-b9fa-57c1ca4ce562)
+
+⏩ Comprobación en la base de datos
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/e2a26c6d-76c6-408e-bd23-80bce952e598)
+
+### Prueba de editar empleado
+
+⏩Envio de datos 
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/2b0bc808-b20d-4473-bfed-3c919c595b1c)
+
+⏩ Mensaje de edición correcta
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/8105b791-c109-4932-b184-28b9d801915a)
+
+⏩ Al realizar el cambio de los datos se actualiza automáticamente el campo fecha editada
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/a1c10c85-059e-4934-8484-7955f8658880)
+
+
 ## Pruebas del frontend
 
 ### Datos de la tabla enterprises en la base de datos
