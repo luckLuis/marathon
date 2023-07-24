@@ -126,6 +126,38 @@ Al momento de realizar esta prueba el servicio nos devuelve un XML con todos los
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/a1c10c85-059e-4934-8484-7955f8658880)
 
+### Prueba de crear departamento
+
+⏩Envio de datos 
+
+Se realiza el envío de datos, importante enviar el id de la empresa que ya exista caso contrario no se podrá crear el departamento
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/5ad68600-d541-44ae-a761-d51a41d6852a)
+
+⏩ Mensaje de correcto funcionamiento
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/957342a0-ac3f-437a-887c-727e7385206a)
+
+⏩ Comprobación en la base de datos
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/79e19122-f5fd-4d65-9f39-42eff0f89610)
+
+### Prueba de editar departamento
+
+⏩Envio de datos 
+
+Al momento de editar un departamento se puede realizar el cambio de todo: descripción, nombre, teléfono y la empresa a la que pertecenece (enviar id de empresa ya existente)
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/abbdbd4e-195e-42cc-81fb-0b8664717c01)
+
+⏩ Mensaje de edición correcta
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/06ad949c-f5e1-4766-aeba-671ed53f068e)
+
+⏩ Al realizar el cambio de los datos se actualiza automáticamente el campo fecha editada
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/7ffe2ccc-5d9f-4db6-a330-e4a840c2ac13)
+
 
 ## Pruebas del frontend
 
