@@ -169,8 +169,20 @@ Al momento de editar un departamento se puede realizar el cambio de todo: descri
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/fa08ed90-f617-4b4f-a1c4-78cd1a0fd975)
 
+### Datos de la tabla employees en la base de datos
 
+![image](https://github.com/luckLuis/marathon/assets/58127103/7d647619-c657-41e2-a0fa-1dc6e6775cc4)
 
+### Datos mostrados en el frontend
 
+![image](https://github.com/luckLuis/marathon/assets/58127103/29bc5483-7944-4ab2-95a7-46978a6f5dd1)
+
+### Datos de la tabla departments en la base de datos
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/e8a69b71-7c68-4bc7-88d5-b496bc1554e5)
+
+### Datos mostrados en el frontend
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/fa981a3b-a6c3-4388-8f55-c0bf93a3059d)
 
 
