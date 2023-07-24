@@ -29,7 +29,7 @@ Para la creación del backend se usarón las herramientas JAVA EE, NetBeand IDE.
 
 El backend generó un web service SOAP el cual se realizó las pruebas del funcionamiento correcto mediante la herramienta SOAP UI e ingresando datos desde la interfaz backend que nos genera.
 
-Servicios desarrolados
+### Servicios desarrolados
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/71d56357-9975-4093-92ef-609c8a9d10ff)
 
@@ -45,7 +45,7 @@ Para la creación y consumo del web service SOAP generado por el backend se usó
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/7993eeb6-72c3-411c-8868-0b8c807f01ee)
 
-Conexión hacia el servicio SOAP:
+### Conexión hacia el servicio SOAP:
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/06adc37c-e383-4af9-a485-3bc72c39ad91)
 
@@ -55,7 +55,7 @@ Publicación de datos obtenidos desde el servicio SOAP en una interfaz gráfica:
 
 ## Pruebas
 
-Datos de la tabla enterprises en la base de datos
+### Datos de la tabla enterprises en la base de datos
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/f536f4ff-ebe9-444d-8254-4114589f0955)
 
