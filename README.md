@@ -17,7 +17,7 @@
 13. Documento con imágenes con evidencia de la solicitud ✔️
 
 # Base de datos
-## Creación del diagrama EER
+## Creación del diagrama EER en MySql WorkBench
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/63ee4b38-0aca-4a7d-9f41-8911e7212fe3)
 
