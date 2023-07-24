@@ -37,6 +37,13 @@ Publicación de datos obtenidos desde el servicio SOAP en una interfaz gráfica:
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/ea05c243-8584-49e3-9c65-c03384057cf9)
 
+## Pruebas
+
+Datos de la tabla enterprises en la base de datos
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/f536f4ff-ebe9-444d-8254-4114589f0955)
+
+
 
 
 
