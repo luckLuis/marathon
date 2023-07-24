@@ -8,39 +8,34 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        <p:dataTable var="enterprise" value="#{staffManagedBean.enterprise}">
+        <div class="card ui-fluid ">
+    <h:form>
+        <p:growl id="msgs" showDetail="true" skipDetailIfEqualsSummary="true"/>
 
-                            <f:facet name="header">
-                                LISTA DE EMPRESAS
-                            </f:facet>
+        <h5 class="mt-0">Single</h5>
+        <div class="formgrid grid">
+            <div class="field col-12 md:col-4">
+                <p:outputLabel value="Simple" for="@next"/>
+                <p:autoComplete id="acSimple" value="#{autoCompleteView.txt1}"
+                                completeMethod="#{autoCompleteView.completeText}" scrollHeight="250"/>
+            </div>
 
-                            <p:column headerText="Code">
-                                <h:outputText value="#{enterprise.id}" />
-                            </p:column>
-                            <p:column headerText="Name">
-                                <h:outputText value="#{enterprise.name}" />
-                            </p:column>
-                            <p:column headerText="Addres">
-                                <h:outputText value="#{enterprise.addres}" />
-                            </p:column>
-                            <p:column headerText="Phone">
-                                <h:outputText value="#{enterprise.phone}" />
-                            </p:column>
-                            <p:column headerText="Created date">
-                                <h:outputText value="#{enterprise.createdDate}" />
-                            </p:column>
+            <div class="field col-12 md:col-4">
+                <p:outputLabel value="Min Length (3)" for="@next"/>
+                <p:autoComplete id="acMinLength" minQueryLength="3" value="#{autoCompleteView.txt2}"
+                                completeMethod="#{autoCompleteView.completeText}" effect="fade" scrollHeight="250"/>
+            </div>
+            
+            <div class="field col-12 md:col-4">
+                <p:outputLabel value="Min Length (3)" for="@next"/>
+                <p:autoComplete id="acMinLength" minQueryLength="3" value="#{autoCompleteView.txt2}"
+                                completeMethod="#{autoCompleteView.completeText}" effect="fade" scrollHeight="250"/>
+            </div>
 
-                            <p:column headerText="Modified date">
-                                <h:outputText value="#{enterprise.modifiedDate}" />
-                            </p:column>
+        </div>
 
-                            <p:column>
-                                <p:commandButton icon="pi pi-pencil"
-                                                 styleClass="edit-button rounded-button ui-button-success" >
-                                    <f:setPropertyActionListener value="#{product}" target="#{crudView.selectedProduct}" />
-
-                                </p:commandButton>
-                            </p:column>
-                        </p:dataTable>
+       
+    </h:form>
+</div>
     </h:body>
 </html>

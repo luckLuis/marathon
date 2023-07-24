@@ -31,14 +31,10 @@ public class StaffManagedBean implements Serializable {
         return port.listar();
     }
 
-    public String addEnterprise(String addres, String name, int phone) {
+    public String addEnterprise(java.lang.String addres, java.lang.String name,
+            java.lang.Integer phone) {
+        
         webservices.ServiceEnterprise port = service.getServiceEnterprisePort();
-
-        Enterprise enterprise = new Enterprise();
-
-        enterprise.setAddres(addres);
-        enterprise.setName(name);
-        enterprise.setPhone(phone);
 
         return port.agregar(addres, name, phone);
     }

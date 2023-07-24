@@ -63,7 +63,15 @@
             </from-outcome> 
             <to-view-id>EmployeeForDepartment/view.xhtml</to-view-id>  
         </navigation-case>
-        
+        <navigation-case>
+            <from-action>
+                #{controller.addEnterprise} 
+            </from-action>
+            <from-outcome>
+                addEnterprise
+            </from-outcome> 
+            <to-view-id>Enterprise/create.xhtml</to-view-id>  
+        </navigation-case>
     </navigation-rule>
     
     <navigation-rule>
@@ -95,7 +103,15 @@
             </from-outcome> 
             <to-view-id>Departments/view.xhtml</to-view-id>  
         </navigation-case>
-        
+        <navigation-case>
+            <from-action>
+                #{controller.addEnterprise} 
+            </from-action>
+            <from-outcome>
+                addEnterprise
+            </from-outcome> 
+            <to-view-id>Enterprise/create.xhtml</to-view-id>  
+        </navigation-case>
     </navigation-rule>
     
     <navigation-rule>
@@ -126,6 +142,16 @@
                 departmentPage
             </from-outcome> 
             <to-view-id>Departments/view.xhtml</to-view-id>  
+        </navigation-case>
+        
+        <navigation-case>
+            <from-action>
+                #{controller.addEnterprise} 
+            </from-action>
+            <from-outcome>
+                addEnterprise
+            </from-outcome> 
+            <to-view-id>Enterprise/create.xhtml</to-view-id>  
         </navigation-case>
         
     </navigation-rule>
@@ -167,6 +193,15 @@
                 departmentsEmployees
             </from-outcome> 
             <to-view-id>EmployeeForDepartment/view.xhtml</to-view-id>  
+        </navigation-case>
+        <navigation-case>
+            <from-action>
+                #{controller.addEnterprise} 
+            </from-action>
+            <from-outcome>
+                addEnterprise
+            </from-outcome> 
+            <to-view-id>Enterprise/create.xhtml</to-view-id>  
         </navigation-case>
         
     </navigation-rule>

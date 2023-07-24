@@ -31,4 +31,8 @@ public class navegatePage implements Serializable{
     public String departmentsEmployeesPage(){
         return "departmentsEmployees";
     }
+    
+     public String addEnterprise(){
+        return "addEnterprise";
+    }
 }
