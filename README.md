@@ -183,6 +183,7 @@ Al momento de editar un departamento se puede realizar el cambio de todo: descri
 
 ### Datos mostrados en el frontend
 
-![image](https://github.com/luckLuis/marathon/assets/58127103/fa981a3b-a6c3-4388-8f55-c0bf93a3059d)
+![image](https://github.com/luckLuis/marathon/assets/58127103/58feb201-270a-4672-a50b-e54dbf92763d)
+
 
 
