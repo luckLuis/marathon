@@ -8,57 +8,71 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        <div class="container mt-4">
 
-            
-            <p:card style="margin-bottom: 2em">
 
-                <h:form>
+        <h:form>
 
-                    <div class="card">
-                        <div class="container mt-4">
-                            <p:commandButton value="New" icon="pi pi-plus" actionListener="#{crudView.openNew}"
-                                             styleClass="ui-button-success" style="margin-right: .5rem">     
-                            </p:commandButton>
+            <div class="card">
+                                
+                <div class="card">
+                <h:commandLink value="Ir a empleados"
+                               action="#{controller.employeePage}"/>
+                </div>
+                <div class="card">
+                
+                <h:commandLink value="Ir a departamentos"
+                               action="#{controller.departmentPage}"/>
+                </div>
+                
+                <div class="card">
+                
+                <h:commandLink value="Ir a empleados por departamento"
+                               action="#{controller.departmentsEmployeesPage}"/>
+                </div>
+            </div>
+        </h:form>
+        
+        
+        <div class="card">
+            <h:form id="form">
+
+                <p:toolbar>
+                    <p:toolbarGroup>
+                        <p:commandButton value="New" icon="pi pi-plus" actionListener="#{crudView.openNew}"
+                                         oncomplete="PF('manageProductDialog').show()"
+                                         styleClass="ui-button-success" style="margin-right: .5rem">
+                        </p:commandButton>
+                    </p:toolbarGroup>
+                </p:toolbar>
+
+                <p:dataTable id="dt-products" widgetVar="dtProducts" var="enterprise" value="#{staffManagedBean.enterprise}"
+                             reflow="true" rowKey="#{enterprise.id}" paginator="true" rows="5" paginatorPosition="bottom">
+                    <f:facet name="header">
+                        <div class="header">
+                            <span style="font-weight: bold">LISTA DE EMPRESAS</span>
                         </div>
-                        <p:dataTable var="enterprise" value="#{staffManagedBean.enterprise}">
-
-                            <f:facet name="header">
-                                LISTA DE EMPRESAS
-                            </f:facet>
-
-                            <p:column headerText="Code">
-                                <h:outputText value="#{enterprise.id}" />
-                            </p:column>
-                            <p:column headerText="Name">
-                                <h:outputText value="#{enterprise.name}" />
-                            </p:column>
-                            <p:column headerText="Addres">
-                                <h:outputText value="#{enterprise.addres}" />
-                            </p:column>
-                            <p:column headerText="Phone">
-                                <h:outputText value="#{enterprise.phone}" />
-                            </p:column>
-                            <p:column headerText="Created date">
-                                <h:outputText value="#{enterprise.createdDate}" />
-                            </p:column>
-
-                            <p:column headerText="Modified date">
-                                <h:outputText value="#{enterprise.modifiedDate}" />
-                            </p:column>
-
-                            <p:column>
-                                <h:commandButton action="#{staffManagedBean.seeEnterprise(enterprise)}"
-                                    value="VER"  >
-                                    
-
-                                </h:commandButton>
-                            </p:column>
-                        </p:dataTable>
-                    </div>
-                </h:form>
-            </p:card>
-
+                    </f:facet>
+                    <p:column headerText="Id">
+                        <h:outputText value="#{enterprise.id}" />
+                    </p:column>
+                    <p:column headerText="Name">
+                        <h:outputText value="#{enterprise.name}" />
+                    </p:column>
+                    <p:column headerText="Address">
+                        <h:outputText value="#{enterprise.addres}" />
+                    </p:column>
+                    <p:column headerText="Phone">
+                        <h:outputText value="#{enterprise.phone}" />
+                    </p:column>
+                    <p:column headerText="Created date">
+                        <h:outputText value="#{enterprise.createdDate}" />
+                    </p:column>
+                    <p:column headerText="Modified date">
+                        <h:outputText value="#{enterprise.modifiedDate}" />
+                    </p:column>
+                </p:dataTable>
+            </h:form>
         </div>
+        
     </h:body>
 </html>

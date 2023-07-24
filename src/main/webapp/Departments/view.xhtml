@@ -2,27 +2,28 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:p="http://primefaces.org/ui">
+
     <h:head>
-        <title>Enterprises</title>
+        <title>Departments</title>
     </h:head>
+    
     <h:body>
-        
+
         <h:form>
 
             <div class="card">
                 <div class="card">
-                <h:commandLink value="Ir a empleados"
-                               action="#{controller.employeePage}"/>
+                    <h:commandLink value="Ir a empresas"
+                                   action="#{controller.enterprisePage}"/>
+
                 </div>
                 <div class="card">
-                
-                <h:commandLink value="Ir a departamentos"
-                               action="#{controller.departmentPage}"/>
+                    <h:commandLink value="Ir a empleados"
+                                   action="#{controller.employeePage}"/>
                 </div>
             </div>
         </h:form>
-        
-        
+
         <div class="card">
             <h:form id="form">
 
@@ -35,33 +36,31 @@
                     </p:toolbarGroup>
                 </p:toolbar>
 
-                <p:dataTable id="dt-products" widgetVar="dtProducts" var="enterprise" value="#{staffManagedBean.enterprise}"
-                             reflow="true" rowKey="#{enterprise.id}" paginator="true" rows="5" paginatorPosition="bottom">
+                <p:dataTable id="dt-products" widgetVar="dtProducts" var="department" value="#{staffManagedBean.department}"
+                             reflow="true" rowKey="#{department.id}" paginator="true" rows="5" paginatorPosition="bottom">
                     <f:facet name="header">
                         <div class="header">
-                            <span style="font-weight: bold">LISTA DE EMPRESAS</span>
+                            <span style="font-weight: bold">LISTA DE DEPARTAMENTOS</span>
                         </div>
                     </f:facet>
                     <p:column headerText="Id">
-                        <h:outputText value="#{enterprise.id}" />
+                        <h:outputText value="#{department.id}" />
                     </p:column>
                     <p:column headerText="Name">
-                        <h:outputText value="#{enterprise.name}" />
+                        <h:outputText value="#{department.name}" />
                     </p:column>
-                    <p:column headerText="Address">
-                        <h:outputText value="#{enterprise.addres}" />
+                    <p:column headerText="Description">
+                        <h:outputText value="#{department.description}" />
                     </p:column>
                     <p:column headerText="Phone">
-                        <h:outputText value="#{enterprise.phone}" />
+                        <h:outputText value="#{department.phone}" />
                     </p:column>
                     <p:column headerText="Created date">
-                        <h:outputText value="#{enterprise.createdDate}" />
-                    </p:column>
-                    <p:column headerText="Modified date">
-                        <h:outputText value="#{enterprise.modifiedDate}" />
+                        <h:outputText value="#{department.idEnterprise}" />
                     </p:column>
                 </p:dataTable>
             </h:form>
         </div>
+
     </h:body>
 </html>
