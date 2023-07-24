@@ -53,11 +53,61 @@ Publicación de datos obtenidos desde el servicio SOAP en una interfaz gráfica:
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/ea05c243-8584-49e3-9c65-c03384057cf9)
 
-## Pruebas
+## Pruebas del backend
+
+### Interfaz gráfica para las pruebas del backend
+
+El proyecto cuenta con varios servicios que serían listar, listarEmpleados, editar, editarEmpleados, entre otros y tambien cuenta con servicios extras que son eliminar y listar por ID.
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/a94f84a4-4891-404e-88b0-af4cfaa230f9)
+
+### Prueba de listado de empresas
+
+Al momento de realizar esta prueba el servicio nos devuelve un XML con todos los datos obtenidos de la base de datos:
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/1a867163-d865-41c1-b879-34db3fe1f821)
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/31e22002-2edc-4554-a743-61d85dc61774)
+
+### Prueba de crear empresa
+
+⏩Envio de datos
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/6b984dcf-f25a-4ebe-8b7c-025cadef5839)
+
+⏩ Mensaje de correcto funcionamiento
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/35905f60-5f76-46d3-8db4-e3988858d66d)
+
+⏩ Comprobación en la base de datos
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/4e7418a6-fb25-4919-b64c-c7d1181bb6a0)
+
+### Prueba de editar empresa
+
+⏩ Se envia los datos ingresando el ID de la empresa a modificar
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/179d454b-efba-458e-963e-ecd16d40c8af)
+
+⏩ Mensaje de editado correcto
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/5d12dcfa-e8a9-44c0-a346-e10a9a977abc)
+
+⏩ Al realizar el cambio de los datos se actualiza automáticamente el campo fecha editada
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/b273f935-3dda-4a43-906f-7faf8a741f13)
+
+
+## Pruebas del frontend
 
 ### Datos de la tabla enterprises en la base de datos
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/f536f4ff-ebe9-444d-8254-4114589f0955)
+
+### Datos mostrados en el frontend
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/fa08ed90-f617-4b4f-a1c4-78cd1a0fd975)
+
 
 
 
