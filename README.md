@@ -29,3 +29,14 @@ Para la creación y consumo del web service SOAP generado por el backend se usó
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/7993eeb6-72c3-411c-8868-0b8c807f01ee)
 
+Conexión hacia el servicio SOAP:
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/06adc37c-e383-4af9-a485-3bc72c39ad91)
+
+Publicación de datos obtenidos desde el servicio SOAP en una interfaz gráfica:
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/ea05c243-8584-49e3-9c65-c03384057cf9)
+
+
+
+
