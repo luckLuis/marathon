@@ -185,13 +185,31 @@ Al momento de editar un departamento se puede realizar el cambio de todo: descri
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/58feb201-270a-4672-a50b-e54dbf92763d)
 
-### Interfaz gráfica crear empresas con ingreso de datos
+### Envio de datos desde el frontend
+
+⏩ Interfaz gráfica crear empresas con ingreso de datos
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/53090c9c-699c-4a6e-81f0-1a7ffe30370c)
 
-Creación correcta de la nueva empresa con comprobación en la base de datos
+⏩ Creación correcta de la nueva empresa con comprobación en la base de datos
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/5801c041-d466-42dc-8c4f-68056c6ed89e)
+
+⏩ Interfaz gráfica crear empleados con ingreso de datos
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/b58546e5-89be-4e13-b925-2e75f67435b8)
+
+⏩ Creación correcta del nuevo empleado con comprobación en la base de datos
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/705941db-18f9-4a6b-8ab6-a077da0ccdea)
+
+⏩ Interfaz gráfica crear departamentos con ingreso de datos (se debe ingresar el id del departamento que pertenece)
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/5e9ee258-9a2d-4844-9ff5-24acbdb93fc2)
+
+⏩ Creación correcta del nuevo empleado con comprobación en la base de datos
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/66bdb7b3-3128-4ccd-9e59-015a08616427)
 
 
 
