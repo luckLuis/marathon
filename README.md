@@ -3,13 +3,13 @@
 # Evaluación 
 
 1. Crear una pantalla que permita visualizar empresas. ✔️
-2. Crear una pantalla para crear empresas. (falta enviar datos desde el front end, el backend funciona correctamente)
+2. Crear una pantalla para crear empresas. ✔️
 3. Cree una pantalla para editar las empresas. (falta enviar datos desde el front end, el backend funciona correctamente)
 4. Cree una pantalla que le permita visualizar los departamentos. ✔️
-5. Crear una pantalla para crear departamentos. (falta enviar datos desde el front end, el backend funciona correctamente)
+5. Crear una pantalla para crear departamentos. ✔️
 6. Cree una pantalla para editar los departamentos. (falta enviar datos desde el front end, el backend funciona correctamente)
 7. Cree una pantalla que le permita visualizar a los empleados. ✔️
-8. Crea una pantalla para crear empleados. (falta enviar datos desde el front end, el backend funciona correctamente)
+8. Crea una pantalla para crear empleados. ✔️
 9. Cree una pantalla para editar los empleados. (falta enviar datos desde el front end, el backend funciona correctamente)
 10. Cree una guía de instalación para poner en producción la aplicación.
 11. Código fuente para revisión. ✔️
