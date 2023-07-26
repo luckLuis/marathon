@@ -51,7 +51,7 @@ Para la creación y consumo del web service SOAP generado por el backend se usó
 
 Publicación de datos obtenidos desde el servicio SOAP en una interfaz gráfica:
 
-![image](https://github.com/luckLuis/marathon/assets/58127103/ea05c243-8584-49e3-9c65-c03384057cf9)
+![image](https://github.com/luckLuis/marathon/assets/58127103/88d95d63-7fd1-42e9-9740-cbb8fad849fd)
 
 ## Pruebas del backend
 
