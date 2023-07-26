@@ -59,7 +59,7 @@ Publicación de datos obtenidos desde el servicio SOAP en una interfaz gráfica:
 
 El proyecto cuenta con varios servicios que serían listar, listarEmpleados, editar, editarEmpleados, entre otros y tambien cuenta con servicios extras que son eliminar y listar por ID.
 
-![image](https://github.com/luckLuis/marathon/assets/58127103/a94f84a4-4891-404e-88b0-af4cfaa230f9)
+![image](https://github.com/luckLuis/marathon/assets/58127103/058d2f6d-4e1d-4f62-b8a0-490fc0ebd171)
 
 ### Prueba de listado de empresas
 
