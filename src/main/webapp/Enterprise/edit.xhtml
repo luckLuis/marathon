@@ -1,11 +1,95 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
     <h:head>
         <title>Facelet Title</title>
+
+        <style>
+            /* Estilos para el formulario */
+            .form-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 50px;
+            }
+
+            .form-field {
+                margin-bottom: 10px;
+            }
+
+            /* Estilos para el botón */
+            .submit-button {
+                background-color: blue;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            .submit-button:hover {
+                background-color: darkblue;
+            }
+        </style>
+
     </h:head>
     <h:body>
-        Hello from Facelets
+
+        <p:menubar>
+            <p:submenu label="Empresas">
+                <p:menuitem value="Ver empresas" action="#{controller.enterprisePage}" />
+                <p:menuitem value="Crear empresa" action="#{controller.addEnterprise}" />
+                <p:menuitem value="Editar empresa" action="#{controller.editEnterprise}" />
+            </p:submenu>
+
+            <p:submenu label="Empleados">          
+                <p:menuitem value="Ver empleados" action="#{controller.employeePage}" /> 
+                <p:menuitem value="Crear empleado" action="#{controller.addEmployee}" /> 
+                <p:menuitem value="Editar empleado" action="#{controller.editEmployee}" />
+            </p:submenu>
+
+            <p:submenu label="Departamentos">          
+                <p:menuitem value="Ver departamentos" action="#{controller.enterprisePage}" /> 
+                <p:menuitem value="Crear departamento" action="#{controller.addDepartment}" /> 
+                <p:menuitem value="Editar departamento" action="#{controller.editDepartment}" /> 
+            </p:submenu>
+            
+            <p:submenu label="Empleados por departamento">          
+                <p:menuitem value="Ver empleados por departamento" action="#{controller.departmentsEmployeesPage}" /> 
+                <p:menuitem value="Crear empleados por departamento" action="#{controller.addDepartmentsEmployees}" />
+                <p:menuitem value="Editar empleados por departamento" action="#{controller.editDepartmentsEmployees}" />
+            </p:submenu>
+        </p:menubar>
+
+        <div class="form-container">
+            <h:form>
+                <div class="form-field">
+                    <h3>ID:</h3>
+                    <h:inputText value="#{staffManagedBean.id}" />
+                </div>
+
+                <div class="form-field">
+                    <h3>Dirección:</h3>
+                    <h:inputText value="#{staffManagedBean.addres}" />
+                </div>
+
+                <div class="form-field">
+                    <h3>Nombre:</h3>
+                    <h:inputText value="#{staffManagedBean.name}" />
+                </div>
+                
+                <div class="form-field">
+                    <h3>Teléfono:</h3>
+                    <h:inputText value="#{staffManagedBean.phone}" />
+                </div>
+
+                
+
+                <h:commandButton value="Enviar" styleClass="submit-button" action="#{staffManagedBean.editEnterprise()}" />
+            </h:form>
+        </div>
     </h:body>
 </html>

@@ -4,53 +4,11 @@
 <xsd:import namespace="http://webServices/" schemaLocation="http://localhost:8080/backEnd/Service?xsd=1"/>
 </xsd:schema>
 </types>
-<message name="Actualizar">
-<part name="parameters" element="tns:Actualizar"/>
-</message>
-<message name="ActualizarResponse">
-<part name="parameters" element="tns:ActualizarResponse"/>
-</message>
-<message name="Eliminar">
-<part name="parameters" element="tns:Eliminar"/>
-</message>
-<message name="EliminarResponse">
-<part name="parameters" element="tns:EliminarResponse"/>
-</message>
-<message name="agregar">
-<part name="parameters" element="tns:agregar"/>
-</message>
-<message name="agregarResponse">
-<part name="parameters" element="tns:agregarResponse"/>
-</message>
-<message name="listar">
-<part name="parameters" element="tns:listar"/>
-</message>
-<message name="listarResponse">
-<part name="parameters" element="tns:listarResponse"/>
-</message>
-<message name="listarID">
-<part name="parameters" element="tns:listarID"/>
-</message>
-<message name="listarIDResponse">
-<part name="parameters" element="tns:listarIDResponse"/>
-</message>
-<message name="agregarEmpleados">
-<part name="parameters" element="tns:agregarEmpleados"/>
-</message>
-<message name="agregarEmpleadosResponse">
-<part name="parameters" element="tns:agregarEmpleadosResponse"/>
-</message>
 <message name="listarDepartamentosEmpleados">
 <part name="parameters" element="tns:listarDepartamentosEmpleados"/>
 </message>
 <message name="listarDepartamentosEmpleadosResponse">
 <part name="parameters" element="tns:listarDepartamentosEmpleadosResponse"/>
-</message>
-<message name="listarDepartamentos">
-<part name="parameters" element="tns:listarDepartamentos"/>
-</message>
-<message name="listarDepartamentosResponse">
-<part name="parameters" element="tns:listarDepartamentosResponse"/>
 </message>
 <message name="listarEmpleados">
 <part name="parameters" element="tns:listarEmpleados"/>
@@ -58,17 +16,53 @@
 <message name="listarEmpleadosResponse">
 <part name="parameters" element="tns:listarEmpleadosResponse"/>
 </message>
+<message name="listarDepartamentos">
+<part name="parameters" element="tns:listarDepartamentos"/>
+</message>
+<message name="listarDepartamentosResponse">
+<part name="parameters" element="tns:listarDepartamentosResponse"/>
+</message>
+<message name="EliminarEmpresa">
+<part name="parameters" element="tns:EliminarEmpresa"/>
+</message>
+<message name="EliminarEmpresaResponse">
+<part name="parameters" element="tns:EliminarEmpresaResponse"/>
+</message>
+<message name="ActualizarEmpresa">
+<part name="parameters" element="tns:ActualizarEmpresa"/>
+</message>
+<message name="ActualizarEmpresaResponse">
+<part name="parameters" element="tns:ActualizarEmpresaResponse"/>
+</message>
+<message name="agregarEmpresa">
+<part name="parameters" element="tns:agregarEmpresa"/>
+</message>
+<message name="agregarEmpresaResponse">
+<part name="parameters" element="tns:agregarEmpresaResponse"/>
+</message>
+<message name="listarEmpresas">
+<part name="parameters" element="tns:listarEmpresas"/>
+</message>
+<message name="listarEmpresasResponse">
+<part name="parameters" element="tns:listarEmpresasResponse"/>
+</message>
+<message name="listarEmpresaID">
+<part name="parameters" element="tns:listarEmpresaID"/>
+</message>
+<message name="listarEmpresaIDResponse">
+<part name="parameters" element="tns:listarEmpresaIDResponse"/>
+</message>
+<message name="agregarEmpleados">
+<part name="parameters" element="tns:agregarEmpleados"/>
+</message>
+<message name="agregarEmpleadosResponse">
+<part name="parameters" element="tns:agregarEmpleadosResponse"/>
+</message>
 <message name="listarEmpleadosID">
 <part name="parameters" element="tns:listarEmpleadosID"/>
 </message>
 <message name="listarEmpleadosIDResponse">
 <part name="parameters" element="tns:listarEmpleadosIDResponse"/>
-</message>
-<message name="actualizarDepartamento">
-<part name="parameters" element="tns:actualizarDepartamento"/>
-</message>
-<message name="actualizarDepartamentoResponse">
-<part name="parameters" element="tns:actualizarDepartamentoResponse"/>
 </message>
 <message name="ActualizarEmpleados_departamento">
 <part name="parameters" element="tns:ActualizarEmpleados_departamento"/>
@@ -81,6 +75,12 @@
 </message>
 <message name="agregarDepartamentoResponse">
 <part name="parameters" element="tns:agregarDepartamentoResponse"/>
+</message>
+<message name="actualizarDepartamento">
+<part name="parameters" element="tns:actualizarDepartamento"/>
+</message>
+<message name="actualizarDepartamentoResponse">
+<part name="parameters" element="tns:actualizarDepartamentoResponse"/>
 </message>
 <message name="ActualizarEmpleados">
 <part name="parameters" element="tns:ActualizarEmpleados"/>
@@ -95,49 +95,45 @@
 <part name="parameters" element="tns:agregarEmpleadoDepartamentoResponse"/>
 </message>
 <portType name="ServiceEnterprise">
-<operation name="Actualizar">
-<input wsam:Action="http://webServices/ServiceEnterprise/ActualizarRequest" message="tns:Actualizar"/>
-<output wsam:Action="http://webServices/ServiceEnterprise/ActualizarResponse" message="tns:ActualizarResponse"/>
-</operation>
-<operation name="Eliminar">
-<input wsam:Action="http://webServices/ServiceEnterprise/EliminarRequest" message="tns:Eliminar"/>
-<output wsam:Action="http://webServices/ServiceEnterprise/EliminarResponse" message="tns:EliminarResponse"/>
-</operation>
-<operation name="agregar">
-<input wsam:Action="http://webServices/ServiceEnterprise/agregarRequest" message="tns:agregar"/>
-<output wsam:Action="http://webServices/ServiceEnterprise/agregarResponse" message="tns:agregarResponse"/>
-</operation>
-<operation name="listar">
-<input wsam:Action="http://webServices/ServiceEnterprise/listarRequest" message="tns:listar"/>
-<output wsam:Action="http://webServices/ServiceEnterprise/listarResponse" message="tns:listarResponse"/>
-</operation>
-<operation name="listarID">
-<input wsam:Action="http://webServices/ServiceEnterprise/listarIDRequest" message="tns:listarID"/>
-<output wsam:Action="http://webServices/ServiceEnterprise/listarIDResponse" message="tns:listarIDResponse"/>
-</operation>
-<operation name="agregarEmpleados">
-<input wsam:Action="http://webServices/ServiceEnterprise/agregarEmpleadosRequest" message="tns:agregarEmpleados"/>
-<output wsam:Action="http://webServices/ServiceEnterprise/agregarEmpleadosResponse" message="tns:agregarEmpleadosResponse"/>
-</operation>
 <operation name="listarDepartamentosEmpleados">
 <input wsam:Action="http://webServices/ServiceEnterprise/listarDepartamentosEmpleadosRequest" message="tns:listarDepartamentosEmpleados"/>
 <output wsam:Action="http://webServices/ServiceEnterprise/listarDepartamentosEmpleadosResponse" message="tns:listarDepartamentosEmpleadosResponse"/>
-</operation>
-<operation name="listarDepartamentos">
-<input wsam:Action="http://webServices/ServiceEnterprise/listarDepartamentosRequest" message="tns:listarDepartamentos"/>
-<output wsam:Action="http://webServices/ServiceEnterprise/listarDepartamentosResponse" message="tns:listarDepartamentosResponse"/>
 </operation>
 <operation name="listarEmpleados">
 <input wsam:Action="http://webServices/ServiceEnterprise/listarEmpleadosRequest" message="tns:listarEmpleados"/>
 <output wsam:Action="http://webServices/ServiceEnterprise/listarEmpleadosResponse" message="tns:listarEmpleadosResponse"/>
 </operation>
+<operation name="listarDepartamentos">
+<input wsam:Action="http://webServices/ServiceEnterprise/listarDepartamentosRequest" message="tns:listarDepartamentos"/>
+<output wsam:Action="http://webServices/ServiceEnterprise/listarDepartamentosResponse" message="tns:listarDepartamentosResponse"/>
+</operation>
+<operation name="EliminarEmpresa">
+<input wsam:Action="http://webServices/ServiceEnterprise/EliminarEmpresaRequest" message="tns:EliminarEmpresa"/>
+<output wsam:Action="http://webServices/ServiceEnterprise/EliminarEmpresaResponse" message="tns:EliminarEmpresaResponse"/>
+</operation>
+<operation name="ActualizarEmpresa">
+<input wsam:Action="http://webServices/ServiceEnterprise/ActualizarEmpresaRequest" message="tns:ActualizarEmpresa"/>
+<output wsam:Action="http://webServices/ServiceEnterprise/ActualizarEmpresaResponse" message="tns:ActualizarEmpresaResponse"/>
+</operation>
+<operation name="agregarEmpresa">
+<input wsam:Action="http://webServices/ServiceEnterprise/agregarEmpresaRequest" message="tns:agregarEmpresa"/>
+<output wsam:Action="http://webServices/ServiceEnterprise/agregarEmpresaResponse" message="tns:agregarEmpresaResponse"/>
+</operation>
+<operation name="listarEmpresas">
+<input wsam:Action="http://webServices/ServiceEnterprise/listarEmpresasRequest" message="tns:listarEmpresas"/>
+<output wsam:Action="http://webServices/ServiceEnterprise/listarEmpresasResponse" message="tns:listarEmpresasResponse"/>
+</operation>
+<operation name="listarEmpresaID">
+<input wsam:Action="http://webServices/ServiceEnterprise/listarEmpresaIDRequest" message="tns:listarEmpresaID"/>
+<output wsam:Action="http://webServices/ServiceEnterprise/listarEmpresaIDResponse" message="tns:listarEmpresaIDResponse"/>
+</operation>
+<operation name="agregarEmpleados">
+<input wsam:Action="http://webServices/ServiceEnterprise/agregarEmpleadosRequest" message="tns:agregarEmpleados"/>
+<output wsam:Action="http://webServices/ServiceEnterprise/agregarEmpleadosResponse" message="tns:agregarEmpleadosResponse"/>
+</operation>
 <operation name="listarEmpleadosID">
 <input wsam:Action="http://webServices/ServiceEnterprise/listarEmpleadosIDRequest" message="tns:listarEmpleadosID"/>
 <output wsam:Action="http://webServices/ServiceEnterprise/listarEmpleadosIDResponse" message="tns:listarEmpleadosIDResponse"/>
-</operation>
-<operation name="actualizarDepartamento">
-<input wsam:Action="http://webServices/ServiceEnterprise/actualizarDepartamentoRequest" message="tns:actualizarDepartamento"/>
-<output wsam:Action="http://webServices/ServiceEnterprise/actualizarDepartamentoResponse" message="tns:actualizarDepartamentoResponse"/>
 </operation>
 <operation name="ActualizarEmpleados_departamento">
 <input wsam:Action="http://webServices/ServiceEnterprise/ActualizarEmpleados_departamentoRequest" message="tns:ActualizarEmpleados_departamento"/>
@@ -146,6 +142,10 @@
 <operation name="agregarDepartamento">
 <input wsam:Action="http://webServices/ServiceEnterprise/agregarDepartamentoRequest" message="tns:agregarDepartamento"/>
 <output wsam:Action="http://webServices/ServiceEnterprise/agregarDepartamentoResponse" message="tns:agregarDepartamentoResponse"/>
+</operation>
+<operation name="actualizarDepartamento">
+<input wsam:Action="http://webServices/ServiceEnterprise/actualizarDepartamentoRequest" message="tns:actualizarDepartamento"/>
+<output wsam:Action="http://webServices/ServiceEnterprise/actualizarDepartamentoResponse" message="tns:actualizarDepartamentoResponse"/>
 </operation>
 <operation name="ActualizarEmpleados">
 <input wsam:Action="http://webServices/ServiceEnterprise/ActualizarEmpleadosRequest" message="tns:ActualizarEmpleados"/>
@@ -158,70 +158,7 @@
 </portType>
 <binding name="ServiceEnterprisePortBinding" type="tns:ServiceEnterprise">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
-<operation name="Actualizar">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
-<output>
-<soap:body use="literal"/>
-</output>
-</operation>
-<operation name="Eliminar">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
-<output>
-<soap:body use="literal"/>
-</output>
-</operation>
-<operation name="agregar">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
-<output>
-<soap:body use="literal"/>
-</output>
-</operation>
-<operation name="listar">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
-<output>
-<soap:body use="literal"/>
-</output>
-</operation>
-<operation name="listarID">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
-<output>
-<soap:body use="literal"/>
-</output>
-</operation>
-<operation name="agregarEmpleados">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
-<output>
-<soap:body use="literal"/>
-</output>
-</operation>
 <operation name="listarDepartamentosEmpleados">
-<soap:operation soapAction=""/>
-<input>
-<soap:body use="literal"/>
-</input>
-<output>
-<soap:body use="literal"/>
-</output>
-</operation>
-<operation name="listarDepartamentos">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -239,7 +176,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="listarEmpleadosID">
+<operation name="listarDepartamentos">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -248,7 +185,61 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="actualizarDepartamento">
+<operation name="EliminarEmpresa">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="ActualizarEmpresa">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="agregarEmpresa">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="listarEmpresas">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="listarEmpresaID">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="agregarEmpleados">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="listarEmpleadosID">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -267,6 +258,15 @@
 </output>
 </operation>
 <operation name="agregarDepartamento">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="actualizarDepartamento">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

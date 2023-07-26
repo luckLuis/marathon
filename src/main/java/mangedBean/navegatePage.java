@@ -29,10 +29,42 @@ public class navegatePage implements Serializable{
     }
     
     public String departmentsEmployeesPage(){
-        return "departmentsEmployees";
+        return "departmentsEmployeesPage";
     }
     
-     public String addEnterprise(){
+    
+    
+    
+    public String addEnterprise(){
         return "addEnterprise";
+    }
+     
+    public String addEmployee(){
+        return "addEmployee";
+    }
+    
+    public String addDepartment(){
+        return "addDepartment";
+    }
+    
+    public String addDepartmentsEmployees(){
+        return "addDepartmentsEmployees";
+    }
+    
+    
+    public String editEnterprise(){
+        return "editEnterprise";
+    }
+    
+    public String editEmployee(){
+        return "editEmployee";
+    }
+    
+    public String editDepartment(){
+        return "editDepartment";
+    }
+    
+    public String editDepartmentsEmployees(){
+        return "editDepartmentsEmployees";
     }
 }

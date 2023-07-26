@@ -19,9 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 public class Controller extends HttpServlet {
 
   
-    
-    
-    
+ 
     
     String add = "Enterprises/create.xhtml";
     String edit = "Enterprises/edit.xhtml";

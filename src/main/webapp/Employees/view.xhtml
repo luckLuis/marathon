@@ -1,27 +1,39 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
     <h:head>
         <title>Employees</title>
     </h:head>
     <h:body>
 
-        <h:form>
+        <p:menubar>
+            <p:submenu label="Empresas">
+                <p:menuitem value="Ver empresas" action="#{controller.enterprisePage}" />
+                <p:menuitem value="Crear empresa" action="#{controller.addEnterprise}" />
+                <p:menuitem value="Editar empresa" action="#{controller.editEnterprise}" />
+            </p:submenu>
 
-            <div class="card">
-                <div class="card">
-                    <h:commandLink value="Ir a empresas"
-                                   action="#{controller.enterprisePage}"/>
+            <p:submenu label="Empleados">          
+                <p:menuitem value="Ver empleados" action="#{controller.employeePage}" /> 
+                <p:menuitem value="Crear empleado" action="#{controller.addEmployee}" /> 
+                <p:menuitem value="Editar empleado" action="#{controller.editEmployee}" />
+            </p:submenu>
 
-                </div>
-                <div class="card">
+            <p:submenu label="Departamentos">          
+                <p:menuitem value="Ver departamentos" action="#{controller.enterprisePage}" /> 
+                <p:menuitem value="Crear departamento" action="#{controller.addDepartment}" /> 
+                <p:menuitem value="Editar departamento" action="#{controller.editDepartment}" /> 
+            </p:submenu>
+            
+            <p:submenu label="Empleados por departamento">          
+                <p:menuitem value="Ver empleados por departamento" action="#{controller.departmentsEmployeesPage}" /> 
+                <p:menuitem value="Crear empleados por departamento" action="#{controller.addDepartmentsEmployees}" />
+                <p:menuitem value="Editar empleados por departamento" action="#{controller.editDepartmentsEmployees}" />
+            </p:submenu>
+        </p:menubar>
 
-                    <h:commandLink value="Ir a departamentos"
-                                   action="#{controller.departmentPage}"/>
-                </div>
-            </div>
-        </h:form>
 
         <div class="card">
             <h:form id="form">
@@ -48,16 +60,16 @@
                     <p:column headerText="Name">
                         <h:outputText value="#{employee.name}" />
                     </p:column>
-                    <p:column headerText="Address">
+                    <p:column headerText="Age">
                         <h:outputText value="#{employee.age}" />
                     </p:column>
-                    <p:column headerText="Phone">
+                    <p:column headerText="Email">
                         <h:outputText value="#{employee.email}" />
                     </p:column>
-                    <p:column headerText="Phone">
+                    <p:column headerText="Position">
                         <h:outputText value="#{employee.position}" />
                     </p:column>
-                    <p:column headerText="Phone">
+                    <p:column headerText="Surname">
                         <h:outputText value="#{employee.surname}" />
                     </p:column>
                     <p:column headerText="Created date">

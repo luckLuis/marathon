@@ -6,23 +6,34 @@
         <title>Enterprises</title>
     </h:head>
     <h:body>
-        
-        <h:form>
 
-            <div class="card">
-                <div class="card">
-                <h:commandLink value="Ir a empleados"
-                               action="#{controller.employeePage}"/>
-                </div>
-                <div class="card">
-                
-                <h:commandLink value="Ir a departamentos"
-                               action="#{controller.departmentPage}"/>
-                </div>
-            </div>
-        </h:form>
-        
-        
+        <p:menubar>
+            <p:submenu label="Empresas">
+                <p:menuitem value="Ver empresas" action="#{controller.enterprisePage}" />
+                <p:menuitem value="Crear empresa" action="#{controller.addEnterprise}" />
+                <p:menuitem value="Editar empresa" action="#{controller.editEnterprise}" />
+            </p:submenu>
+
+            <p:submenu label="Empleados">          
+                <p:menuitem value="Ver empleados" action="#{controller.employeePage}" /> 
+                <p:menuitem value="Crear empleado" action="#{controller.addEmployee}" /> 
+                <p:menuitem value="Editar empleado" action="#{controller.editEmployee}" />
+            </p:submenu>
+
+            <p:submenu label="Departamentos">          
+                <p:menuitem value="Ver departamentos" action="#{controller.enterprisePage}" /> 
+                <p:menuitem value="Crear departamento" action="#{controller.addDepartment}" /> 
+                <p:menuitem value="Editar departamento" action="#{controller.editDepartment}" /> 
+            </p:submenu>
+            
+            <p:submenu label="Empleados por departamento">          
+                <p:menuitem value="Ver empleados por departamento" action="#{controller.departmentsEmployeesPage}" /> 
+                <p:menuitem value="Crear empleados por departamento" action="#{controller.addDepartmentsEmployees}" />
+                <p:menuitem value="Editar empleados por departamento" action="#{controller.editDepartmentsEmployees}" />
+            </p:submenu>
+        </p:menubar>
+
+
         <div class="card">
             <h:form id="form">
 

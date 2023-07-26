@@ -6,6 +6,36 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Facelet Title</title>
+
+        <style>
+            /* Estilos para el formulario */
+            .form-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 50px;
+            }
+
+            .form-field {
+                margin-bottom: 10px;
+            }
+
+            /* Estilos para el botón */
+            .submit-button {
+                background-color: blue;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            .submit-button:hover {
+                background-color: darkblue;
+            }
+        </style>
+
     </h:head>
     <h:body>
 
@@ -35,43 +65,34 @@
             </p:submenu>
         </p:menubar>
 
+        <div class="form-container">
+            <h:form>
+                <div class="form-field">
+                    <h3>Nombre:</h3>
+                    <h:inputText value="#{staffManagedBean.name}" />
+                </div>
 
-        <div class="card">
-            <h:form id="form">
+                <div class="form-field">
+                    <h3>Edad:</h3>
+                    <h:inputText value="#{staffManagedBean.age}" />
+                </div>
 
-                <p:toolbar>
-                    <p:toolbarGroup>
-                        <p:commandButton value="New" icon="pi pi-plus" actionListener="#{crudView.openNew}"
-                                         oncomplete="PF('manageProductDialog').show()"
-                                         styleClass="ui-button-success" style="margin-right: .5rem">
-                        </p:commandButton>
-                    </p:toolbarGroup>
-                </p:toolbar>
+                <div class="form-field">
+                    <h3>Email:</h3>
+                    <h:inputText value="#{staffManagedBean.email}" />
+                </div>
+                
+                <div class="form-field">
+                    <h3>Puesto:</h3>
+                    <h:inputText value="#{staffManagedBean.position}" />
+                </div>
+                
+                <div class="form-field">
+                    <h3>Surname:</h3>
+                    <h:inputText value="#{staffManagedBean.surname}" />
+                </div>
 
-                <p:dataTable id="dt-products" widgetVar="dtProducts" var="departmentsEmployees" value="#{staffManagedBean.employessForDepartments}" 
-                             reflow="true" rowKey="#{departmentsEmployees.id}" paginator="true" rows="5" paginatorPosition="bottom">
-                    <f:facet name="header">
-                        <div class="header">
-                            <span style="font-weight: bold">LISTA DE EMPLEADOS POR DEPARTAMENTO</span>
-                        </div>
-                    </f:facet>
-
-                    <p:column headerText="Id">
-                        <h:outputText value="#{departmentsEmployees.id}" />
-                    </p:column>
-                    <p:column headerText=" Id Department">
-                        <h:outputText value="#{departmentsEmployees.idDepartment}" />
-                    </p:column>
-                    <p:column headerText="Id Employee">
-                        <h:outputText value="#{departmentsEmployees.idEmployee}" />
-                    </p:column>
-                    <p:column headerText="Created date">
-                        <h:outputText value="#{departmentsEmployees.createdDate}" />
-                    </p:column>
-                    <p:column headerText="Modified date">
-                        <h:outputText value="#{departmentsEmployees.modifiedDate}" />
-                    </p:column>
-                </p:dataTable>
+                <h:commandButton value="Enviar" styleClass="submit-button" action="#{staffManagedBean.addEmployee}" />
             </h:form>
         </div>
     </h:body>
