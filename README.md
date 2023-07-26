@@ -185,5 +185,14 @@ Al momento de editar un departamento se puede realizar el cambio de todo: descri
 
 ![image](https://github.com/luckLuis/marathon/assets/58127103/58feb201-270a-4672-a50b-e54dbf92763d)
 
+### Interfaz gráfica crear empresas con ingreso de datos
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/53090c9c-699c-4a6e-81f0-1a7ffe30370c)
+
+Creación correcta de la nueva empresa con comprobación en la base de datos
+
+![image](https://github.com/luckLuis/marathon/assets/58127103/5801c041-d466-42dc-8c4f-68056c6ed89e)
+
+
 
 
